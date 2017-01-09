@@ -104,6 +104,7 @@ static int network_load_one(Manager *manager, const char *filename) {
         *d = '\0';
 
         network->dhcp = ADDRESS_FAMILY_NO;
+        network->dhcp_use_anonymity_profile = false;
         network->dhcp_use_ntp = true;
         network->dhcp_use_dns = true;
         network->dhcp_use_hostname = true;

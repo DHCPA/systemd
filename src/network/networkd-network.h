@@ -112,6 +112,7 @@ struct Network {
         DCHPClientIdentifier dhcp_client_identifier;
         char *dhcp_vendor_class_identifier;
         char *dhcp_hostname;
+        bool dhcp_use_anonymity_profile;
         bool dhcp_use_dns;
         bool dhcp_use_ntp;
         bool dhcp_use_mtu;
